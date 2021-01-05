@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Position - Static, Relative, Absolute e Fixed</title>
+    <style>
+      .container {
+        background: blueviolet;
+        color: #fff;
+        margin: 48px 0;  
+        height: 150px;    
+        /* Static */     
+
+      }
+
+        /*Position Relative*/
+      .filho-relative{
+        background: brown;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        bottom: 20px;
+        width: 120px;
+        right: 50px;
+      }
+
+      .filho-absolute{
+        position: absolute;
+        background: red;
+
+        top: 100px;
+        right: 60px;
+      }
+
+      .fixed{
+        font-size: 50px;
+        color: #fff;
+        position: fixed;
+        background: red;
+        bottom: 20px;
+        right: 30px;
+              
+        z-index: 999;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="fixed">
+      Texto Fixed
+    </div>
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-relative">
+      Texto 2
+    </div>
+
+    Texto 3
+
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-absolute">
+      Texto 2
+    </div>
+    Texto 3
+
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-relative">
+      Texto 2
+    </div>
+
+    Texto 3
+
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-absolute">
+      Texto 2
+    </div>
+    Texto 3
+
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-relative">
+      Texto 2
+    </div>
+
+    Texto 3
+
+    <div class="container">
+      texto 1
+    </div>
+
+    <div class="filho-absolute">
+      Texto 2
+    </div>
+    Texto 3
+  </body>
+</html>
